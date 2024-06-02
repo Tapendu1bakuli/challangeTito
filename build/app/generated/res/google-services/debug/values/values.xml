@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1051893419200-a01dkj2o01tgp314lk5l6p6fch5ml9ek.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1051893419200</string>
+    <string name="google_api_key" translatable="false">AIzaSyBA9PvBF7gfsW__w_Qch-0MXDBsAj9-kJ8</string>
+    <string name="google_app_id" translatable="false">1:1051893419200:android:075d7dbf96db7d1c833125</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBA9PvBF7gfsW__w_Qch-0MXDBsAj9-kJ8</string>
+    <string name="google_storage_bucket" translatable="false">titos-v2.appspot.com</string>
+    <string name="project_id" translatable="false">titos-v2</string>
+</resources>

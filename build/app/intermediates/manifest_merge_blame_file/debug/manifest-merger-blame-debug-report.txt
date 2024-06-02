@@ -1,0 +1,593 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.titos.titosapp2"
+4    android:versionCode="5"
+5    android:versionName="1.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:4:5-67
+14-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:5:5-65
+15-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:5:22-62
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:6:5-79
+16-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:6:22-76
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:7:5-81
+17-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:7:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:8:5-80
+18-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:8:22-77
+19
+20    <uses-feature android:name="android.hardware.camera" />
+20-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:10:5-60
+20-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:10:19-57
+21
+22    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+22-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:11:5-80
+22-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:11:22-77
+23
+24    <uses-feature android:name="android.hardware.camera.autofocus" />
+24-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:12:5-70
+24-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:12:19-67
+25
+26    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+26-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:14:5-71
+26-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:14:22-68
+27    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
+27-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+27-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+28    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+28-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+28-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+29
+30    <queries>
+30-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:15
+31        <intent>
+31-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
+32            <action android:name="android.support.customtabs.action.CustomTabsService" />
+32-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-90
+32-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-87
+33        </intent>
+34        <intent>
+34-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:25:9-27:18
+35            <action android:name="android.media.browse.MediaBrowserService" />
+35-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:26:13-79
+35-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:26:21-76
+36        </intent>
+37        <intent>
+37-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:28:9-30:18
+38            <action android:name="androidx.media2.session.MediaSessionService" />
+38-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:29:13-82
+38-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:29:21-79
+39        </intent>
+40        <intent>
+40-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:31:9-33:18
+41            <action android:name="androidx.media2.session.MediaLibraryService" />
+41-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:32:13-82
+41-->[androidx.media2:media2-session:1.2.1] /Users/technoexponent/.gradle/caches/transforms-3/99c2af2ebad7bda6de6668b2cd79a390/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:32:21-79
+42        </intent>
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+45-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+45-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+46    <uses-permission android:name="android.permission.VIBRATE" />
+46-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+46-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+47    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+47-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+47-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+48    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+48-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+48-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+49    <uses-permission android:name="android.permission.BLUETOOTH" />
+49-->[:headset_connection_event] /Users/technoexponent/StudioProjects/titios-mobile-app/build/headset_connection_event/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+49-->[:headset_connection_event] /Users/technoexponent/StudioProjects/titios-mobile-app/build/headset_connection_event/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+50    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+50-->[:headset_connection_event] /Users/technoexponent/StudioProjects/titios-mobile-app/build/headset_connection_event/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-74
+50-->[:headset_connection_event] /Users/technoexponent/StudioProjects/titios-mobile-app/build/headset_connection_event/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-71
+51    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+51-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:26:5-82
+51-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:26:22-79
+52
+53    <permission
+53-->[androidx.core:core:1.10.1] /Users/technoexponent/.gradle/caches/transforms-3/d7cd2f497955363e0616a772ab70d04a/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+54        android:name="com.titos.titosapp2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+54-->[androidx.core:core:1.10.1] /Users/technoexponent/.gradle/caches/transforms-3/d7cd2f497955363e0616a772ab70d04a/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+55        android:protectionLevel="signature" />
+55-->[androidx.core:core:1.10.1] /Users/technoexponent/.gradle/caches/transforms-3/d7cd2f497955363e0616a772ab70d04a/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+56
+57    <uses-permission android:name="com.titos.titosapp2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+57-->[androidx.core:core:1.10.1] /Users/technoexponent/.gradle/caches/transforms-3/d7cd2f497955363e0616a772ab70d04a/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+57-->[androidx.core:core:1.10.1] /Users/technoexponent/.gradle/caches/transforms-3/d7cd2f497955363e0616a772ab70d04a/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+58
+59    <application
+59-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:16:5-71:19
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.10.1] /Users/technoexponent/.gradle/caches/transforms-3/d7cd2f497955363e0616a772ab70d04a/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+61        android:debuggable="true"
+62        android:icon="@mipmap/ic_launcher"
+62-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:17:9-43
+63        android:label="TiToS"
+63-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:18:9-30
+64        android:requestLegacyExternalStorage="true"
+64-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:19:9-52
+65        android:usesCleartextTraffic="true" >
+65-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:20:9-44
+66        <provider
+67            android:name="com.pichillilorenzo.flutter_inappwebview.InAppWebViewFileProvider"
+68            android:authorities="com.titos.titosapp2.flutter_inappwebview.fileprovider"
+69            android:exported="false"
+70            android:grantUriPermissions="true" >
+71            <meta-data
+71-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:68
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+73                android:resource="@xml/provider_paths" />
+73-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-65
+74        </provider>
+75
+76        <meta-data
+76-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:30:9-32:54
+77            android:name="com.google.firebase.messaging.default_notification_icon"
+77-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:31:13-83
+78            android:resource="@mipmap/ic_launcher" />
+78-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:32:13-51
+79
+80        <activity
+80-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:33:9-65:20
+81            android:name="com.titos.titosapp2.MainActivity"
+81-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:34:13-41
+82            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+82-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:35:13-163
+83            android:exported="true"
+83-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:36:13-36
+84            android:hardwareAccelerated="true"
+84-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:37:13-47
+85            android:launchMode="singleTop"
+85-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:38:13-43
+86            android:theme="@style/LaunchTheme"
+86-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:39:13-47
+87            android:windowSoftInputMode="adjustResize" >
+87-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:40:13-55
+88
+89            <!--
+90                 Specifies an Android theme to apply to this Activity as soon as
+91                 the Android process has started. This theme is visible to the user
+92                 while the Flutter UI initializes. After that, this theme continues
+93                 to determine the Window background behind the Flutter UI.
+94            -->
+95            <meta-data
+95-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:45:13-47:57
+96                android:name="io.flutter.embedding.android.NormalTheme"
+96-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:46:17-72
+97                android:resource="@style/NormalTheme" />
+97-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:47:17-54
+98            <!--
+99                 Displays an Android View that continues showing the launch screen
+100                 Drawable until Flutter paints its first frame, then this splash
+101                 screen fades out. A splash screen is useful to avoid any visual
+102                 gap between the end of Android's launch screen and the painting of
+103                 Flutter's first frame.
+104            -->
+105
+106            <meta-data
+106-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:54:13-56:58
+107                android:name="com.google.firebase.messaging.default_notification_color"
+107-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:55:17-88
+108                android:resource="@color/colorPrimary" />
+108-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:56:17-55
+109            <meta-data
+109-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:57:13-59:66
+110                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+110-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:58:17-81
+111                android:resource="@drawable/launch_background" />
+111-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:59:17-63
+112
+113            <intent-filter>
+113-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:61:13-64:29
+114                <action android:name="android.intent.action.MAIN" />
+114-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:62:17-69
+114-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:62:25-66
+115
+116                <category android:name="android.intent.category.LAUNCHER" />
+116-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:63:17-77
+116-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:63:27-74
+117            </intent-filter>
+118        </activity>
+119        <!--
+120             Don't delete the meta-data below.
+121             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+122        -->
+123        <meta-data
+123-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:68:9-70:33
+124            android:name="flutterEmbedding"
+124-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:69:13-44
+125            android:value="2" />
+125-->/Users/technoexponent/StudioProjects/titios-mobile-app/android/app/src/main/AndroidManifest.xml:70:13-30
+126
+127        <service
+127-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
+128            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+128-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
+129            android:exported="false"
+129-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+130            android:permission="android.permission.BIND_JOB_SERVICE" />
+130-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
+131        <service
+131-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
+132            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+132-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
+133            android:exported="false" >
+133-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+134            <intent-filter>
+134-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+135                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+135-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+135-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+136            </intent-filter>
+137        </service>
+138
+139        <receiver
+139-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
+140            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+140-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
+141            android:exported="true"
+141-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+142            android:permission="com.google.android.c2dm.permission.SEND" >
+142-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
+143            <intent-filter>
+143-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+144-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+144-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+145            </intent-filter>
+146        </receiver>
+147
+148        <service
+148-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-41:19
+149            android:name="com.google.firebase.components.ComponentDiscoveryService"
+149-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:18-89
+150            android:directBootAware="true"
+150-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+151            android:exported="false" >
+151-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:56:13-37
+152            <meta-data
+152-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
+153                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+153-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
+155            <meta-data
+155-->[:firebase_core] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+156                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+156-->[:firebase_core] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[:firebase_core] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:57:13-59:85
+159                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+159-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:58:17-122
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:59:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:60:13-62:85
+162                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+162-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:61:17-119
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:62:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-iid:21.1.0] /Users/technoexponent/.gradle/caches/transforms-3/74576b5e226c3121f367a88d24342a92/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+165                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+165-->[com.google.firebase:firebase-iid:21.1.0] /Users/technoexponent/.gradle/caches/transforms-3/74576b5e226c3121f367a88d24342a92/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-iid:21.1.0] /Users/technoexponent/.gradle/caches/transforms-3/74576b5e226c3121f367a88d24342a92/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-installations:17.2.0] /Users/technoexponent/.gradle/caches/transforms-3/aebf54c9fde5b736f3ca4bb99a5270d0/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+168                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+168-->[com.google.firebase:firebase-installations:17.2.0] /Users/technoexponent/.gradle/caches/transforms-3/aebf54c9fde5b736f3ca4bb99a5270d0/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-installations:17.2.0] /Users/technoexponent/.gradle/caches/transforms-3/aebf54c9fde5b736f3ca4bb99a5270d0/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-installations:17.2.0] /Users/technoexponent/.gradle/caches/transforms-3/aebf54c9fde5b736f3ca4bb99a5270d0/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+171                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+171-->[com.google.firebase:firebase-installations:17.2.0] /Users/technoexponent/.gradle/caches/transforms-3/aebf54c9fde5b736f3ca4bb99a5270d0/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-installations:17.2.0] /Users/technoexponent/.gradle/caches/transforms-3/aebf54c9fde5b736f3ca4bb99a5270d0/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/305b89b411bbbda38485702013caff2a/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+174                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+174-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/305b89b411bbbda38485702013caff2a/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/305b89b411bbbda38485702013caff2a/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+177                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+177-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/technoexponent/.gradle/caches/transforms-3/ee762bc7e1877974b23de32b965f7f2b/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+180                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+180-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/technoexponent/.gradle/caches/transforms-3/ee762bc7e1877974b23de32b965f7f2b/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/technoexponent/.gradle/caches/transforms-3/ee762bc7e1877974b23de32b965f7f2b/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+182        </service>
+183
+184        <provider
+184-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
+185            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+185-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
+186            android:authorities="com.titos.titosapp2.flutterfirebasemessaginginitprovider"
+186-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
+187            android:exported="false"
+187-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
+188            android:initOrder="99" />
+188-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
+189
+190        <activity
+190-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-20:47
+191            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+191-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-104
+192            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+192-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-137
+193            android:exported="true"
+193-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-36
+194            android:theme="@style/AppTheme" />
+194-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-44
+195        <activity
+195-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-24:55
+196            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+196-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-112
+197            android:exported="true"
+197-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-36
+198            android:theme="@style/ThemeTransparent" />
+198-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-52
+199        <activity
+199-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-28:55
+200            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+200-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-106
+201            android:exported="true"
+201-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+202            android:theme="@style/ThemeTransparent" />
+202-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-52
+203        <activity
+203-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-33:55
+204            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+204-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-126
+205            android:exported="true"
+205-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-36
+206            android:launchMode="singleInstance"
+206-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-48
+207            android:theme="@style/ThemeTransparent" />
+207-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-52
+208        <activity
+208-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-38:55
+209            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+209-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-120
+210            android:exported="true"
+210-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-36
+211            android:launchMode="singleInstance"
+211-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-48
+212            android:theme="@style/ThemeTransparent" />
+212-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-52
+213
+214        <receiver
+214-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:40
+215            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+215-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-111
+216            android:enabled="true"
+216-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-35
+217            android:exported="false" />
+217-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-37
+218
+219        <meta-data
+219-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:45:9-47:36
+220            android:name="io.flutter.embedded_views_preview"
+220-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-61
+221            android:value="true" />
+221-->[:flutter_inappwebview_quill] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_inappwebview_quill/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-33
+222
+223        <receiver
+223-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+224            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+224-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-97
+225            android:exported="false" />
+225-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+226        <receiver
+226-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-28:20
+227            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+227-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-101
+228            android:exported="false" >
+228-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+229            <intent-filter>
+229-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-27:29
+230                <action android:name="android.intent.action.BOOT_COMPLETED" />
+230-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-79
+230-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-76
+231                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+231-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-84
+231-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-81
+232                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+232-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-82
+232-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-79
+233                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+233-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-82
+233-->[:flutter_local_notifications] /Users/technoexponent/StudioProjects/titios-mobile-app/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-79
+234            </intent-filter>
+235        </receiver>
+236
+237        <activity
+237-->[:url_launcher_android] /Users/technoexponent/StudioProjects/titios-mobile-app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+238            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+238-->[:url_launcher_android] /Users/technoexponent/StudioProjects/titios-mobile-app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+239            android:exported="false"
+239-->[:url_launcher_android] /Users/technoexponent/StudioProjects/titios-mobile-app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+240            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+240-->[:url_launcher_android] /Users/technoexponent/StudioProjects/titios-mobile-app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+241
+242        <provider
+242-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+243            android:name="io.flutter.plugins.share.ShareFileProvider"
+243-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-70
+244            android:authorities="com.titos.titosapp2.flutter.share_provider"
+244-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+245            android:exported="false"
+245-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+246            android:grantUriPermissions="true" >
+246-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+247            <meta-data
+247-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:68
+248                android:name="android.support.FILE_PROVIDER_PATHS"
+248-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+249                android:resource="@xml/flutter_share_file_paths" />
+249-->[:share] /Users/technoexponent/StudioProjects/titios-mobile-app/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-65
+250        </provider>
+251
+252        <receiver
+252-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:29:9-40:20
+253            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+253-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:30:13-78
+254            android:exported="true"
+254-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:31:13-36
+255            android:permission="com.google.android.c2dm.permission.SEND" >
+255-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:32:13-73
+256            <intent-filter>
+256-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+257                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+257-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+257-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+258            </intent-filter>
+259
+260            <meta-data
+260-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:37:13-39:40
+261                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+261-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:38:17-92
+262                android:value="true" />
+262-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:39:17-37
+263        </receiver>
+264        <!--
+265             FirebaseMessagingService performs security checks at runtime,
+266             but set to not exported to explicitly avoid allowing another app to call it.
+267        -->
+268        <service
+268-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:46:9-53:19
+269            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+269-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:47:13-82
+270            android:directBootAware="true"
+270-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:48:13-43
+271            android:exported="false" >
+271-->[com.google.firebase:firebase-messaging:23.4.1] /Users/technoexponent/.gradle/caches/transforms-3/917b609a14dd7d741e3d3db92575aff2/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:49:13-37
+272            <intent-filter android:priority="-500" >
+272-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+273                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+273-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+273-->[:firebase_messaging] /Users/technoexponent/StudioProjects/titios-mobile-app/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+274            </intent-filter>
+275        </service>
+276
+277        <provider
+277-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+278            android:name="com.google.firebase.provider.FirebaseInitProvider"
+278-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+279            android:authorities="com.titos.titosapp2.firebaseinitprovider"
+279-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+280            android:directBootAware="true"
+280-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+281            android:exported="false"
+281-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+282            android:initOrder="100" />
+282-->[com.google.firebase:firebase-common:20.4.2] /Users/technoexponent/.gradle/caches/transforms-3/71cacac971f62020ce9280972ba440c7/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+283
+284        <uses-library
+284-->[androidx.window:window:1.0.0-beta04] /Users/technoexponent/.gradle/caches/transforms-3/24a56cbc9dc9354c3b0b36757eab975b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+285            android:name="androidx.window.extensions"
+285-->[androidx.window:window:1.0.0-beta04] /Users/technoexponent/.gradle/caches/transforms-3/24a56cbc9dc9354c3b0b36757eab975b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+286            android:required="false" />
+286-->[androidx.window:window:1.0.0-beta04] /Users/technoexponent/.gradle/caches/transforms-3/24a56cbc9dc9354c3b0b36757eab975b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+287        <uses-library
+287-->[androidx.window:window:1.0.0-beta04] /Users/technoexponent/.gradle/caches/transforms-3/24a56cbc9dc9354c3b0b36757eab975b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+288            android:name="androidx.window.sidecar"
+288-->[androidx.window:window:1.0.0-beta04] /Users/technoexponent/.gradle/caches/transforms-3/24a56cbc9dc9354c3b0b36757eab975b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+289            android:required="false" />
+289-->[androidx.window:window:1.0.0-beta04] /Users/technoexponent/.gradle/caches/transforms-3/24a56cbc9dc9354c3b0b36757eab975b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+290
+291        <service
+291-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/3bbbad7fc8637425ac3d6eb6b11e5ea0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+292            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+292-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/3bbbad7fc8637425ac3d6eb6b11e5ea0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+293            android:exported="false" >
+293-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/3bbbad7fc8637425ac3d6eb6b11e5ea0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+294            <meta-data
+294-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/3bbbad7fc8637425ac3d6eb6b11e5ea0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+295                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+295-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/3bbbad7fc8637425ac3d6eb6b11e5ea0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+296                android:value="cct" />
+296-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/3bbbad7fc8637425ac3d6eb6b11e5ea0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+297        </service>
+298        <service
+298-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/c9c81517df31462552b4cbd370929606/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+299            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+299-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/c9c81517df31462552b4cbd370929606/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+300            android:exported="false"
+300-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/c9c81517df31462552b4cbd370929606/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+301            android:permission="android.permission.BIND_JOB_SERVICE" >
+301-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/c9c81517df31462552b4cbd370929606/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+302        </service>
+303
+304        <receiver
+304-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/c9c81517df31462552b4cbd370929606/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+305            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+305-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/c9c81517df31462552b4cbd370929606/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+306            android:exported="false" />
+306-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/technoexponent/.gradle/caches/transforms-3/c9c81517df31462552b4cbd370929606/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+307
+308        <activity
+308-->[com.google.android.gms:play-services-base:18.0.1] /Users/technoexponent/.gradle/caches/transforms-3/87da88b36d0cc776b773fba4041ac46d/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+309            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+309-->[com.google.android.gms:play-services-base:18.0.1] /Users/technoexponent/.gradle/caches/transforms-3/87da88b36d0cc776b773fba4041ac46d/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+310            android:exported="false"
+310-->[com.google.android.gms:play-services-base:18.0.1] /Users/technoexponent/.gradle/caches/transforms-3/87da88b36d0cc776b773fba4041ac46d/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+311            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+311-->[com.google.android.gms:play-services-base:18.0.1] /Users/technoexponent/.gradle/caches/transforms-3/87da88b36d0cc776b773fba4041ac46d/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+312
+313        <meta-data
+313-->[com.google.android.gms:play-services-basement:18.1.0] /Users/technoexponent/.gradle/caches/transforms-3/75aacc8366d86dabdb0cb06bb1556e3f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+314            android:name="com.google.android.gms.version"
+314-->[com.google.android.gms:play-services-basement:18.1.0] /Users/technoexponent/.gradle/caches/transforms-3/75aacc8366d86dabdb0cb06bb1556e3f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+315            android:value="@integer/google_play_services_version" />
+315-->[com.google.android.gms:play-services-basement:18.1.0] /Users/technoexponent/.gradle/caches/transforms-3/75aacc8366d86dabdb0cb06bb1556e3f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+316
+317        <provider
+317-->[androidx.emoji2:emoji2:1.0.0] /Users/technoexponent/.gradle/caches/transforms-3/85b48c6c8b047b53296254874c8b532e/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+318            android:name="androidx.startup.InitializationProvider"
+318-->[androidx.emoji2:emoji2:1.0.0] /Users/technoexponent/.gradle/caches/transforms-3/85b48c6c8b047b53296254874c8b532e/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+319            android:authorities="com.titos.titosapp2.androidx-startup"
+319-->[androidx.emoji2:emoji2:1.0.0] /Users/technoexponent/.gradle/caches/transforms-3/85b48c6c8b047b53296254874c8b532e/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+320            android:exported="false" >
+320-->[androidx.emoji2:emoji2:1.0.0] /Users/technoexponent/.gradle/caches/transforms-3/85b48c6c8b047b53296254874c8b532e/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+321            <meta-data
+321-->[androidx.emoji2:emoji2:1.0.0] /Users/technoexponent/.gradle/caches/transforms-3/85b48c6c8b047b53296254874c8b532e/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+322                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+322-->[androidx.emoji2:emoji2:1.0.0] /Users/technoexponent/.gradle/caches/transforms-3/85b48c6c8b047b53296254874c8b532e/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+323                android:value="androidx.startup" />
+323-->[androidx.emoji2:emoji2:1.0.0] /Users/technoexponent/.gradle/caches/transforms-3/85b48c6c8b047b53296254874c8b532e/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+324            <meta-data
+324-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/technoexponent/.gradle/caches/transforms-3/db5ef3e076554f0582a818b5e4af05c0/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+325                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+325-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/technoexponent/.gradle/caches/transforms-3/db5ef3e076554f0582a818b5e4af05c0/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+326                android:value="androidx.startup" />
+326-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/technoexponent/.gradle/caches/transforms-3/db5ef3e076554f0582a818b5e4af05c0/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+327        </provider>
+328    </application>
+329
+330</manifest>

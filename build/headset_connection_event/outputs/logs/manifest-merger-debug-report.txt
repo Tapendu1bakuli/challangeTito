@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:2:3-50
+		INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:3:5-80
+	android:name
+		ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:3:22-77
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:4:5-68
+	android:name
+		ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:4:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:5:5-74
+	android:name
+		ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml:5:22-71
+uses-sdk
+INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+		ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+		ADDED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/technoexponent/.pub-cache/hosted/pub.dev/headset_connection_event-2.1.1/android/src/main/AndroidManifest.xml
